@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폰트 스타일링</title>
+    <style>
+      /* 구글폰트 */
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&family=Noto+Sans+KR:wght@100..900&display=swap");
+      /* 눈누폰트 */
+      @font-face {
+        font-family: "SF_HambakSnow";
+        src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff")
+          format("woff");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      html,
+      body {
+        font-size: 10px;
+      }
+      p {
+        font-size: 16px;
+      }
+      p span {
+        font-size: 2em;
+      }
+      p span {
+        font-size: 2rem;
+      }
+
+      p {
+        font-family: "Noto Sans KR", serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-style: normal;
+      }
+      /* p {
+    font-family: "East Sea Dokdo", serif;
+    font-weight: 100;
+    font-style: normal;
+   } */
+      p {
+        font-family: "SF_HambakSnow";
+        color: red;
+        color: #6cdfee;
+        color: rgb(122, 63, 63);
+      }
+      .font-style {
+        line-height: 1.6;
+        letter-spacing: -0.23px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HELLO</h1>
+    <p>한글이지롱 <span>ipsum</span> dolor sit amet.</p>
+    <p class="font-style">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ipsum
+      corporis omnis quod ducimus, non, quam et nostrum reiciendis fuga
+      excepturi natus. Repellendus laboriosam magni ipsum laborum sit vitae
+      dolorem!
+    </p>
+  </body>
+</html>
